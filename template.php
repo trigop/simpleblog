@@ -10,3 +10,9 @@
  * for your subtheme grows. Please read the README.txt in the /preprocess and /process subfolders
  * for more information on this topic.
  */
+ 
+function simpleblog_preprocess_node(&$variables){
+  
+  //$variables['content']['links']['node']['#links']['node-readmore']['title'] = $variables['content']['links']['node']['#links']['node-readmore']['title'] . ' >'; 
+  
+}
