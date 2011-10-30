@@ -15,13 +15,13 @@
 
 #region-user-first a{
   text-decoration: none;
-  color: red;
+  color: #F7472E;
 }
 
 
 #region-user-first a:hover{
   text-decoration: underline;
-  color: red;
+  color: #F7472E;
 }
 
 .navigation li a {
@@ -55,6 +55,75 @@
   background: none repeat scroll 0 0 #FFFFFF;
 }
 
-.navigation li.active {
+.navigation li a.active {
   background: none repeat scroll 0 0 #F20000;
+}
+
+.submitted{
+  text-transform: uppercase;
+  font-family: 'AllerRegular', Arial, sans-serif;
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+.author{
+  display: block;
+}
+
+.date{
+  color: #CCC;
+}
+
+/*Secciones*/
+footer{
+  
+}
+
+.node-presentation{
+  
+}
+
+
+/*.node-presentation .node-links ul li a{
+  color: #F7472E;
+  padding: 0;
+  text-decoration: none;
+  
+}*/
+
+.node-presentation .node-links ul li a:hover{
+  color: #F7472E;
+  padding: 0;
+  text-decoration: underline;
+  
+}
+
+a:link, a:visited{
+  text-decoration: none;
+  color: #F7472E;
+  
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+article{
+  padding-top: 20px;
+}
+
+h3{
+  font-size: 22px;
+}
+
+h1, h2, h3, h4, h5{
+  font-family: 'AllerRegular', Arial, sans-serif;
+  font-weight: normal;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+body{
+  color: #111;
+  font-family: Arial, sans-serif;
 }
