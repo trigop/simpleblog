@@ -25,38 +25,27 @@
 }
 
 .navigation li a {
-    -moz-border-bottom-colors: none;
-    -moz-border-image: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    background: -moz-linear-gradient(center top , #FFFFFF 0%, #DDDDDD 100%) repeat scroll 0 0 transparent;
-    border-color: #DDDDDD #BBBBBB #999999;
-    border-radius: 11px 11px 11px 11px;
-    border-style: solid;
-    border-width: 1px;
-    color: #333333;
-    cursor: pointer;
-    display: block;
-    float: left;
-    font: bold 12px/1.2 Arial,sans-serif;
-    margin: 0 0.5em 0.5em 0;
-    outline: 0 none;
-    overflow: visible;
-    padding: 4px 10px 3px;
-    text-decoration: none;
-    text-shadow: 0 1px 1px #FFFFFF;
-    text-transform: lowercase;
-    vertical-align: middle;
-    width: auto;
+  font-family: 'AllerRegular', Arial, sans-serif;
+  border-radius: 30px;
+  color: #000000;
+  cursor: pointer;
+  display: block;
+  float: left;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
+
+
 .navigation li a:hover {
-  background: none repeat scroll 0 0 #FFFFFF;
+  color: #F7472E;
 }
 
 .navigation li a.active {
-  background: none repeat scroll 0 0 #F20000;
+  background: none repeat scroll 0 0 #F7472E;
+  color:#FFFFFF;
 }
 
 .submitted{
@@ -126,4 +115,9 @@ h1, h2, h3, h4, h5{
 body{
   color: #111;
   font-family: Arial, sans-serif;
+}
+
+#zone-branding-wrapper{
+  border-bottom: 1px dotted #DFDFDF;
+  padding: 20px 0;
 }
