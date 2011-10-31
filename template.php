@@ -11,8 +11,17 @@
  * for more information on this topic.
  */
  
+function simpleblog_preprocess_page(&$vars){
+  if (isset($vars['node']) && omega_theme_get_setting('hide_node_title') == TRUE){
+    $vars['title_hidden'] = TRUE;
+  }
+  
+}
+
 function simpleblog_preprocess_node(&$variables){
-  
-  //$variables['content']['links']['node']['#links']['node-readmore']['title'] = $variables['content']['links']['node']['#links']['node-readmore']['title'] . ' >'; 
-  
+}
+
+
+function simpleblog_process_region(&$vars){
+
 }

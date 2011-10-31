@@ -2,7 +2,7 @@
   <?php //Imprimir la foto solo en la lista del nodo ?>
   <?php //print $user_picture; ?>
   
-  <?php if (!$page && $title): ?>
+  <?php if ($title): ?>
   
   <?php if ($display_submitted): ?>
   <footer class="submitted grid-2">
@@ -12,15 +12,13 @@
   
   <?php endif; ?>
   
-  <section class="grid-8 node-presentation">
+  <section class="grid-6 node-presentation">
   <header>
     <?php print render($title_prefix); ?>
     <h3<?php print $title_attributes; ?>><a href="<?php print $node_url ?>" title="<?php print $title ?>"><?php print $title ?></a></h2>
     <?php print render($title_suffix); ?>
   </header>
   <?php endif; ?>
-  
-
   
   <div<?php print $content_attributes; ?>>
     <?php

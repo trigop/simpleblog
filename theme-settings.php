@@ -32,12 +32,13 @@ function simpleblog_form_system_theme_settings_alter(&$form, &$form_state) {
   );*/
 
 
-$form['alpha_settings']['simpleblog_configuration'] = array(
+  $form['alpha_settings']['simpleblog_configuration'] = array(
     '#type' => 'fieldset',
     '#weight' => -10,
     '#title' => t('Simpleblog Configuration'),
   );
   $text_head = omega_theme_get_setting('text_head') ? omega_theme_get_setting('text_head') : 'Simple Blog <a href="www.metadrop.net">Contact</>';
+  
   $form['alpha_settings']['simpleblog_configuration']['text_head'] = array(
     '#type' => 'textfield',
     '#description' => t('Add text to head web.'),
@@ -45,5 +46,11 @@ $form['alpha_settings']['simpleblog_configuration'] = array(
     '#default_value' => $text_head,
     );
   
-
+  $hide_node_title = omega_theme_get_setting('hide_node_title') ? omega_theme_get_setting('hide_node_title') : TRUE;    
+  $form['alpha_settings']['simpleblog_configuration']['hide_node_title'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Hide the node title'),
+    '#description' => t('Use tag element-invisible'),
+    '#default_value' => $hide_node_title,
+  );
 }
