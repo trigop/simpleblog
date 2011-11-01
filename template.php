@@ -12,16 +12,15 @@
  */
  
 function simpleblog_preprocess_page(&$vars){
-  if (isset($vars['node']) && omega_theme_get_setting('hide_node_title') == TRUE){
-    $vars['title_hidden'] = TRUE;
-  }
   
 }
 
-function simpleblog_preprocess_node(&$variables){
+function simpleblog_preprocess_node(&$vars){
+  if (isset($vars['node']) && omega_theme_get_setting('hide_node_title') == TRUE){
+    $vars['hide_node_title'] = TRUE;
+  }
 }
 
 
 function simpleblog_process_region(&$vars){
-
 }

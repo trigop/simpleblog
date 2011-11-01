@@ -126,7 +126,7 @@ body{
 }
 
 #region-sidebar-second li a{
-  color: black;
+  color: #111111;
   display: block;
   font-family: 'AllerRegular', Arial, sans-serif;
   font-size: 12px;
@@ -148,3 +148,42 @@ body{
 #region-sidebar-second .block-title{
   margin-bottom: 10px;
 }
+
+.field-type-taxonomy-term-reference .field-item{
+  background-color: #F0F0F0;
+  display: inline;
+  margin-right: 20px;
+  padding: 5px;
+  }
+
+.field-type-taxonomy-term-reference .field-item a{
+  color: #111111;
+}  
+
+.field-type-taxonomy-term-reference .field-item a:hover{
+  text-decoration: none;
+  color: #F7472E ;
+}
+
+ul.inline li {
+  padding: 0;
+}
+
+.node-links{
+  
+  margin: 10px 0 10px 0;
+}
+
+.pager-item{
+  background-color: #F0F0F0;
+  border-radius: 80px 30px 30px 30px;
+  font-size: 10px;
+}
+
+.pager-current{
+  background-color: #F7472E;
+  border-radius: 80px 30px 30px 30px;
+  color: #FFFFFF;
+  font-size: 10px;
+}
+
