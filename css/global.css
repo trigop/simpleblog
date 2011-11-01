@@ -134,6 +134,13 @@ body{
 }
 
 
+.node-links a{
+  color: #f48e01;
+}
+
+.node .field {
+  margin: 20px 0;
+}
 
 /*Secciones*/
 #section-footer{
